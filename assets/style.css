@@ -6,31 +6,35 @@ html{
     }
 
 header{
-    background-image: url('background.png');
+    background-image: url('home-office.jpg');
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
     text-align: center;
-    /* display: flex; */
- 
 }
 
-header h1{
+header p{
+    margin-top: 10rem;
+}
+
+h1, h2, h3, h4{
     font-weight: 100;
-    
+    margin: 0;
 }
 
 .branding{
-    font-size: 10rem;
-    text-shadow: 0 0 20px orangered;
+    font-size: 8rem;
+    font-variant: small-caps;
+    padding-top: 10rem;
+    text-shadow: 0px 1px 0px slateblue;
 }
 
 .button{
     text-decoration: none;
     color: white;
-    padding: 10px;
+    padding: 1rem 2rem;
     background-color: slateblue;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 .container{
