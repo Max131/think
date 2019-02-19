@@ -1,0 +1,47 @@
+html{
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: gray;
+    scroll-behavior: smooth;
+    }
+
+header{
+    background-image: url('background.png');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    text-align: center;
+    /* display: flex; */
+ 
+}
+
+header h1{
+    font-weight: 100;
+    
+}
+
+.branding{
+    font-size: 10rem;
+    text-shadow: 0 0 20px orangered;
+}
+
+.button{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: slateblue;
+    border-radius: 4px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 5rem;
+}
+
+.services{
+    width: 25%;
+    margin: 2rem;
+}
