@@ -5,7 +5,8 @@
 html{
     font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
-    color: gray;
+    font-weight: 100;
+    color: #6d6d6d;
     scroll-behavior: smooth;
     }
 
@@ -13,13 +14,13 @@ header{
     background-image: url('home-office.jpg');
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     color: white;
+    border-bottom: .25rem solid #D81164;
 
 }
 
@@ -27,12 +28,21 @@ header h1{
     font-size: 4.5rem;
 }
 
+header h2{
+    /* color: #D81164 */
+}
+
 header a{
     text-decoration: none;
-    padding: .5rem;
-    background-color: steelblue;
-    border-radius: .5rem;
+    padding: .5rem 1rem;
+    background-color: #D81164;
+    border-radius: .25rem;
     color: white;
+    transition: .2s;
+}
+
+header a:hover{
+    box-shadow: #6d6d6d 0 0 10px;
 }
 
 .brief{
@@ -52,11 +62,14 @@ header a{
 
 .product .material-icons{
     font-size: 3rem;
+    color: #04AAAA;
 }
 
 footer{
     text-align: center;
-    background-color: gray;
+    /* background-color: #D81164; */
+    /* background-color: #68389b; */
+    background-color: #04AAAA;
     color: white;
     padding: 2rem;
 }
@@ -75,10 +88,10 @@ footer{
 
 @media(min-width: 1000px){
     .container{
-        padding: 4rem;
+        padding: 3rem;
     }
 
     .product{ 
-        flex: 1  1 20%;
+        flex: 1 1 25%;
     }
 }
