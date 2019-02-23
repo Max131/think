@@ -28,10 +28,6 @@ header h1{
     font-size: 4.5rem;
 }
 
-header h2{
-    /* color: #D81164 */
-}
-
 header a{
     text-decoration: none;
     padding: .5rem 1rem;
@@ -47,7 +43,7 @@ header a:hover{
 
 .brief{
     text-align: center;
-    padding: 1rem 4rem;
+    padding: 1rem 2rem;
 }
 
 .product{
@@ -56,7 +52,6 @@ header a:hover{
 }
 
 .product h2, .product h3{
-    text-align: center;
     margin: 0;
 }
 
@@ -67,38 +62,35 @@ header a:hover{
 
 footer{
     text-align: center;
-    /* background-color: #D81164; */
-    /* background-color: #68389b; */
     background-color: #04AAAA;
     color: white;
     padding: 2rem;
     border-top: .25rem solid #D81164;
 }
 
-@media(min-width: 600px){
+@media screen and (min-width: 600px){
+    .brief{
+        padding: 1rem 4rem;
+    }
+
     .container{
         display: flex;
         flex-wrap: wrap;
-        padding: 2rem 1rem;
+        padding: 2rem;
+        justify-content: center;
     }
 
     .product{
-        flex: 1 1 35%;
+        flex: 1 1 14rem;
     }
 }
 
-@media(min-width: 1000px){
-    .container{
-        padding: 3rem;
+@media screen and (min-width: 1000px){
+    .brief{
+        padding: 1rem 10rem;
     }
 
-    .product{ 
-        flex: 1 1 25%;
-    }
-
-@media(min-width: 1400px){
     .product{
-        flex: 1 1 12%
+        max-width: 14rem;
     }
-}
 }
