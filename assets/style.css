@@ -26,6 +26,7 @@ header{
 
 header h1{
     font-size: 4.5rem;
+    text-shadow: 0 0 10px beige;
 }
 
 header a{
@@ -53,6 +54,10 @@ header a:hover{
 
 .product h2, .product h3{
     margin: 0;
+}
+
+.product h2{
+    margin-left: -.25rem;
 }
 
 .product .material-icons{
