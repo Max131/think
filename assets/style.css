@@ -10,23 +10,25 @@ html{
     scroll-behavior: smooth;
     }
 
-header{
-    background-image: url('home-office.jpg');
+header, .aboutus{
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    text-align:center;
     color: white;
-    border-bottom: .25rem solid #D81164;
+}
 
+header{
+    background-image: url('home-office.jpg');
 }
 
 header h1{
     font-size: 4.5rem;
     text-shadow: 0 0 10px beige;
+    margin: 1rem;
 }
 
 header a{
@@ -42,7 +44,7 @@ header a:hover{
     box-shadow: #6d6d6d 0 0 10px;
 }
 
-.brief{
+.brief, .aboutus{
     text-align: center;
     padding: 1rem 2rem;
 }
@@ -63,6 +65,16 @@ header a:hover{
 .product .material-icons{
     font-size: 3rem;
     color: #04AAAA;
+}
+
+.aboutus{
+    background-image: url('people.jpg');
+}
+
+.aboutus article{
+    background-color: black;
+    border-radius: .5rem;
+    opacity: .8;
 }
 
 footer{
@@ -87,6 +99,10 @@ footer{
 
     .product{
         flex: 1 1 14rem;
+    }
+
+    .abouts article{
+        border-radius: 0;
     }
 }
 
