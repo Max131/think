@@ -37,11 +37,12 @@ header a{
     background-color: #D81164;
     border-radius: .25rem;
     color: white;
-    transition: .2s;
+    transition: .5s;
 }
 
 header a:hover{
     box-shadow: #6d6d6d 0 0 10px;
+    background-color: #04AAAA;
 }
 
 .brief, .aboutus{
@@ -54,12 +55,18 @@ header a:hover{
     margin: 0;
 }
 
-.product h2, .product h3{
+h2, h3{
     margin: 0;
+    text-shadow: 0 0 1px gray;
 }
 
 .product h2{
     margin-left: -.25rem;
+}
+
+ul{
+    all: unset;
+    list-style-type: square;
 }
 
 .product .material-icons{
@@ -71,7 +78,7 @@ header a:hover{
     background-image: url('people.jpg');
 }
 
-.aboutus article{
+.aboutus div{
     background-color: black;
     border-radius: .5rem;
     opacity: .8;
@@ -100,10 +107,6 @@ footer{
 
     .product{
         flex: 1 1 14rem;
-    }
-
-    .abouts article{
-        border-radius: 0;
     }
 }
 
