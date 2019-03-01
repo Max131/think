@@ -7,28 +7,31 @@ html{
     font-size: 1.2rem;
     font-weight: 100;
     color: #6d6d6d;
-    scroll-behavior: smooth;
-    }
+    height: 100%;
+    overflow: hidden;
+}
 
-header, .aboutus{
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align:center;
-    color: white;
+body{
+    perspective: 1px;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 header{
     background-image: url('home-office.jpg');
+    color: white;
 }
 
 header h1{
     font-size: 4.5rem;
     text-shadow: 0 0 10px beige;
     margin: 1rem;
+}
+
+header h2{
+    text-shadow: 0 0 5px black;
 }
 
 header a{
@@ -76,11 +79,14 @@ ul{
 
 .aboutus{
     background-image: url('people.jpg');
+    margin: 0 auto;
+    padding: 0;
 }
 
 .aboutus div{
+    padding: 1rem;
     background-color: black;
-    border-radius: .5rem;
+    color: white;
     opacity: .8;
 }
 
@@ -92,6 +98,24 @@ footer{
     padding: 2rem;
     border-top: .25rem solid #D81164;
 }
+
+.parallax{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    background-position: center;
+    background-size: cover;
+    z-index:2;
+}
+
+.parallax-content{
+    transform: translateZ(.25px) scale(.75);
+    text-align: center;
+}
+
 
 @media screen and (min-width: 600px){
     .brief{
@@ -107,6 +131,11 @@ footer{
 
     .product{
         flex: 1 1 14rem;
+    }
+
+    .aboutus div{
+        border-radius: .5rem;
+        margin: 2rem 5rem;
     }
 }
 
