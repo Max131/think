@@ -19,22 +19,41 @@ body{
     scroll-behavior: smooth;
 }
 
-header{
+h2, h3{
+    margin: 0;
+    text-shadow: 0 0 1px gray;
+}
+
+ul{
+    all: unset;
+    list-style-type: square;
+}
+
+footer{
+    text-align: center;
+    font-size: 1.25rem;
+    background-color: #04AAAA;
+    color: white;
+    padding: 2rem;
+    border-top: .25rem solid #D81164;
+}
+
+.landing{
     background-image: url('home-office.jpg');
     color: white;
 }
 
-header h1{
+.landing h1{
     font-size: 4.5rem;
     text-shadow: 0 0 10px beige;
     margin: 1rem;
 }
 
-header h2{
+.landing h2{
     text-shadow: 0 0 5px black;
 }
 
-header a{
+.landing a{
     text-decoration: none;
     padding: .5rem 1rem;
     background-color: #D81164;
@@ -43,7 +62,7 @@ header a{
     transition: .5s;
 }
 
-header a:hover{
+.landing a:hover{
     box-shadow: #6d6d6d 0 0 10px;
     background-color: #04AAAA;
 }
@@ -58,18 +77,8 @@ header a:hover{
     margin: 0;
 }
 
-h2, h3{
-    margin: 0;
-    text-shadow: 0 0 1px gray;
-}
-
 .product h2{
     margin-left: -.25rem;
-}
-
-ul{
-    all: unset;
-    list-style-type: square;
 }
 
 .product .material-icons{
@@ -83,20 +92,10 @@ ul{
     padding: 0;
 }
 
-.aboutus div{
-    padding: 1rem;
+.aboutus>div{
     background-color: black;
     color: white;
     opacity: .8;
-}
-
-footer{
-    text-align: center;
-    font-size: 1.25rem;
-    background-color: #04AAAA;
-    color: white;
-    padding: 2rem;
-    border-top: .25rem solid #D81164;
 }
 
 .parallax{
@@ -116,6 +115,9 @@ footer{
     text-align: center;
 }
 
+.aboutus-content p{
+    padding: 1rem;
+}
 
 @media screen and (min-width: 600px){
     .brief{
@@ -133,9 +135,14 @@ footer{
         flex: 1 1 14rem;
     }
 
-    .aboutus div{
+    .aboutus>div{
         border-radius: .5rem;
         margin: 2rem 5rem;
+    }
+
+    .aboutus-content{
+        display: flex;
+        justify-content: space-evenly;
     }
 }
 
