@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="assets/normalize.css" />
     <link rel="stylesheet" href="assets/style.css" />
@@ -27,15 +27,14 @@
     <section class="container" id="services">
         <article class="product">
             <h2><i class="material-icons">web</i></h2>
-            <h3>Creaci&oacute;n de p&aacute;ginas WEB.</h3>
+            <h3>Desarrollo de p&aacute;ginas web.</h3>
             <p>Obt&eacute;n credibilidad y profesionalismo ante tus clientes. Te creamos una p&aacute;gina web que satisfaga
                 tus necesidades.
                 <ul>
-                    <li>Adquirimos el dominio para tu empresa.</li>
-                    <li>Te conseguimos un servicio de hosting con tus propias cuentas de correo electr&oacute;nico.</li>
-                    <li>Tu página web se podrá ver desde cualquier dispositivo gracias a nuestro diseño responsive.</li>
-                    <li>Optimizacón SEO para posicionar tu página en buscadores (Google, Bing, etc).</li>
-                    <li>Tú eliges si quieres manejar tu página web o te ofrecemos ayuda de un experto.</li>
+                    <li>Dominio y hosting para tu empresa.</li>
+                    <li>Cuentas de correo electr&oacute;nico.</li>
+                    <li>Diseño responsive.</li>
+                    <li>SEO básicp para posicionar tu página en buscadores (Google, Bing, etc).</li>
                 </ul>
             </p>
         </article>
@@ -67,7 +66,7 @@
         </article>
         <article class="product">
             <h2><i class="material-icons">insert_chart</i></h2>
-            <h3>Sistemas de gestión empresarial.</h3>
+            <h3>Gestión empresarial.</h3>
             <p>Ayudamos a que tu empresa aumente su eficiencia y productividad mediante estos sistemas de gestión.
                 <ul>
                     <li>Sistemas contables ASPEL COI.</li>
@@ -79,8 +78,8 @@
         </article>
         <article class="product">
             <h2><i class="material-icons">wifi</i></h2>
-            <h3>Redes y seguridad.</h3>
-            <p>Hacemos instalaciones de Redes de oficina que ayudarán a la comunicación y productividad de tu empresa. Además, ofrecemos instalación de circuito cerrado para mantener seguras tus instalaciones.</p>
+            <h3>Redes y soporte.</h3>
+            <p>Instalaciones de Redes LAN que ayudarán a la comunicación y productividad de tu empresa. </p><p>Además, ofrecemos mantenimiento a tus equipos de computo.</p>
         </article>
     </section> 
     <section class="aboutus">
@@ -96,5 +95,22 @@
             Think! Ideas creativas en marketing digital 2019&copy;
         </p>
     </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+    $(window).scroll( function(){
+        $('.product').each( function(i){
+            
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight()/2;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            if( bottom_of_window > bottom_of_element ){
+                $(this).animate({'opacity':'1'},500);
+            }
+            
+        }); 
+    });
+});
+</script>
 </body>
 </html>
