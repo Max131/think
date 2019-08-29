@@ -86,7 +86,8 @@ li::before{
     position: absolute;
     left: -1rem;
     content: "\2713";
-    color: #04AAAA;
+    color: #D81164;
+    transition: 0.5s;
 }
 
 .product .material-icons{
@@ -98,6 +99,10 @@ li::before{
     box-shadow: 0 0 10px black;
 }
 .product:hover .material-icons{
+    color: #04AAAA;
+}
+
+.product:hover li::before{
     color: #04AAAA;
 }
 
