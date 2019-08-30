@@ -1,7 +1,4 @@
-*{
-    /* font-weight: 200; */
-}
-
+@charset "UTF-8"; 
 html{
     font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
