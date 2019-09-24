@@ -120,6 +120,7 @@ li::before{
 }
 
 footer{
+    color: #F5F5DC;
     text-align: center;
     font-size: 1.25rem;
     background-color: #04AAAA;
