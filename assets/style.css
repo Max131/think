@@ -2,10 +2,10 @@
 html{
     font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
-    color: #F5F5DC;
+    /* color: #F5F5DC; */
     scroll-behavior: smooth;
-    background-color: #2c2c2c;
-    background-image: url('bg.png');
+    /* background-color: #2c2c2c; */
+    /* background-image: url('bg.png'); */
     background-attachment: fixed;
 }
 
@@ -21,6 +21,7 @@ header, .aboutus{
 
 header{
     background-image: url('home-office.jpg');
+    color: #F5F5DC;
 }
 
 header h1, header h2{
@@ -112,6 +113,7 @@ li::before{
 
 .aboutus{
     background-image: url('people.jpg');
+    color: #F5F5DC;
 }
 
 .aboutus div{
