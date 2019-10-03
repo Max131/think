@@ -7,11 +7,29 @@
     <meta name="description" content="Think Online, servicios digitales para empresas">
 	<meta name="keywords" content="Think Online!, desarrollo, web, páginas, páginas web, soporte ténico, redes, sistemas de gestión, arreglo computadoras">
     <meta name="author" content="Think Online!">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" href="assets/normalize.css" />
-    <link rel="stylesheet" href="assets/style.css" />
-    <title>Think!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" 
+          integrity="sha256-vK3UTo/8wHbaUn+dTQD0X6dzidqc5l7gczvH+Bnowwk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="assets/wow.min.js"></script>
+    <script   src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+              crossorigin="anonymous"></script>
+    <style>
+        html{scroll-behavior: smooth;}
+        ul{margin-top: 1rem;}
+        li{list-style-type: disc;}
+        img{border-radius: 0.25rem;}
+        .spaced{margin: 0.5rem 3rem;}
+        .hero{
+            background-image: 
+            radial-gradient(ellipse at center, transparent, black),
+            url('https://thinkonline.xyz/assets/home-office.jpg')!important;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+    <title>Think! - Ideas online</title>
     <!-- Open Graph meta -->
     <meta property="og:type"               content="business.business" />
     <meta property="og:title"              content="Think Online!" />
@@ -23,14 +41,12 @@
 	<meta property="business:contact_data:region" content="Querétaro" />
 	<meta property="business:contact_data:postal_code"    content="76800" /> 
 	<meta property="business:contact_data:country_name"   content="México" /> 
-	
 	<!-- Twitter Cards -->
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="Think Online!">
 	<meta name="twitter:description" content="Desarrollo de páginas web, soporte técnico a computadoras y laptops, implementación de redes y sistemas de gestión">
 	<meta name="twitter:image" content="https://thinkonline.xyz/images/think.jpg">
 	<meta name="twitter:image:alt" content="Logo Think Online!">
-    
     <!-- Marcado JSON-LD generado por el Asistente para el marcado de datos estructurados de Google. -->
 <script type="application/ld+json">
 {
@@ -55,108 +71,180 @@
   }
 }
 </script>
+
 </head>
 <body>
-    <header>
-        <h1>Think!</h1>
-        <h2>Soluciones digitales para internet</h2>
-        <p>
-            <a href="#services">Servicios</a>
-        </p>
-    </header>
-    <section class="brief">
-        <h2>Nuestros servicios.</h2>
-        <p>
-            Ofrecemos gran calidad en nuestros servicios para lograr su entera satisfacci&oacute;n, nos preocupamos por sus proyectos y dar&eacute;mos seguimiento hasta su finalizaci&oacute;n.
-        </p>
-    </section>
-    <section class="container" id="services">
-        <article class="product">
-            <h2><i class="material-icons">web</i></h2>
-            <h3>Desarrollo de p&aacute;ginas web.</h3>
-            <p>Obt&eacute;n credibilidad y profesionalismo ante tus clientes. Te creamos una p&aacute;gina web que satisfaga
-                tus necesidades.
-                <ul>
-                    <li>Dominio y hosting para tu empresa.</li>
-                    <li>Cuentas de correo electr&oacute;nico.</li>
-                    <li>Diseño responsive.</li>
-                    <li>SEO básicp para posicionar tu página en buscadores (Google, Bing, etc).</li>
-                </ul>
-            </p>
-        </article>
-        <article class="product">
-            <h2><i class="material-icons">account_box</i></h2>
-            <h3>Gestión de redes sociales.</h3>
-            <p>Mantén la interacción con tus clientes gracias a las redes sociales. Gestionamos todas tus redes sociales para que nunca te quedes sin contenido:
-                <ul>
-                    <li>Creación de página en Facebook, Instagram y Twitter.</li>
-                    <li>Creación de contenido de Redes sociales.</li>
-                    <li>Community Managers especializados en interacción y atención a tu comunidad en redes sociales.</li>
-                    <li>Gestión de los anuncios publicitarios dentro de las redes sociales.</li>
-                </ul>
-            </p>
-        </article>
-        <article class="product">
-            <h2><i class="material-icons">image</i></h2>
-            <h3>Imagen corporativa.</h3>
-            <p>Haz que tu empresa tenga identidad y presencia ante el mercado.
-                <ul>
-                    <li>Diseño de Logotipos.</li>
-                    <li>Asesoría de imagen y proyección de marca.</li>
-                    <li>Elaboración de Banners y rotulación.</li>
-                    <li>Tarjetas de presentación.</li>
-                    <li>Flyers y carteles.</li>
-                    <li>Señaletica</li>
-                </ul>
-            </p>
-        </article>
-        <article class="product">
-            <h2><i class="material-icons">insert_chart</i></h2>
-            <h3>Gestión empresarial.</h3>
-            <p>Ayudamos a que tu empresa aumente su eficiencia y productividad mediante estos sistemas de gestión.
-                <ul>
-                    <li>Sistemas contables ASPEL COI.</li>
-                    <li>Sistemas de nómina ASPEL NOI.</li>
-                    <li>Sistemas de inventario ASPEL SAE.</li>
-                    <li>Sistemas de facturación F@cture.</li>
-                </ul>
-            </p>
-        </article>
-        <article class="product">
-            <h2><i class="material-icons">wifi</i></h2>
-            <h3>Redes y soporte.</h3>
-            <p>Instalaciones de Redes LAN que ayudarán a la comunicación y productividad de tu empresa. </p><p>Además, ofrecemos mantenimiento a tus equipos de computo.</p>
-        </article>
-    </section> 
-    <section class="aboutus">
-        <div>
-            <h2>Misi&oacute;n</h2>
-            <p>Somos una empresa mexicana dedicada a ayudar a las micro y pequeñas empresas a aumentar su competitividad mediante estrategias digitales mercadológicas, implementadas por profesionales del área de diseño generando un ecosistema digital completo, para la empresa.</p>
-            <h2>Visi&oacute;n</h2>
-            <p>Dentro de 5 años ser los principales impulsores de gran parte del sector empresarial de San Juan del Río con miras a llegar al estado de Querétaro, creando una red de captación de talento en los jóvenes que buscan ejercer su conocimiento para poder así cambiar los niveles de des empleo en México.</p>
+    <section class="hero is-fullheight is-dark is-bold">
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    </div>
+                    <div id="navbarMenuHeroA" class="navbar-menu">
+                    <div class="navbar-end">
+                        <a href="index.html" class="navbar-item">
+                            Inicio
+                        </a>
+                        <a href="#services" class="navbar-item">
+                            Servicios
+                        </a>
+                        <a href="#aboutus" class="navbar-item">
+                            Nosotros
+                        </a>
+                        <a href="#contacus" class="navbar-item">
+                            Contacto
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="hero-body">
+                <div class="container has-text-centered wow bounceIn">
+                    <h1 class="title is-size-1 has-text-weight-light has-text-warning">
+                    Think Online!
+                 </h1>
+                    <p class="subtitle has-text-weight-light">
+                        Soluciones digitales en internet.
+                    </p>
+            </div>
         </div>
     </section>
-    <footer>
-        <p>
-            Think! Ideas creativas en marketing digital 2019&copy;
-        </p>
+    <div class="section" id="services">
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <div class="tile is-child box notification is-danger wow slideInLeft">
+                            <h1 class="title"><i class="icon is-large fas fa-code"></i></h1>
+                            <h2 class="subtitle">Desarrollo Web</h2>
+                            <p>
+                                Obtén credibilidad y profesionalismo ante tus clientes. 
+                                Te creamos una página web que satisfaga tus necesidades.
+                                Recuerda que la <strong>presencia online</strong> es muy importante para 
+                                dar certeza de la confiablidad de una empresa.
+                              
+                            </p>
+                            <ul>
+                                <li>Dominio y hosting para tu empresa.</li>
+                                <li>Cuentas de correo electr&oacute;nico.</li>
+                                <li>Diseño responsive.</li>
+                                <li>SEO básico para posicionar tu página en buscadores (Google, Bing, etc).</li>
+                            </ul>
+                            <br>
+                            <figure class="image is-square">
+                                <img src="images/thinkcol.jpg" alt="Think! Collage">
+                            </figure>
+                    </div>
+                </div>
+                <div class="tile is-parent is-vertical">
+                    <div class="tile is-child box notification is-success  wow fadeInRight">
+                        <h1 class="title"><i class="icon is-large fas fa-laptop"></i></h1>
+                        <h2 class="subtitle">Soporte técnico</h2>
+                        <p>Ofrecemos <strong>soporte técnico a domicilio</strong> a todos sus equipos de computo (Desktop, laptop, modems, routers), 
+                            porque sabemos lo importante que es trabajar sin contratiempos.</p>
+                        <ul>
+                            <li>Formateo</li>
+                            <li>Actualizaciones</li>
+                            <li>Software</li>
+                            <li>Antivirus</li>
+                            <li>Respaldos</li>
+                        </ul>
+                    </div> 
+                    <div class="tile is-child box notification is-warning wow slideInLeft">
+                        <h1 class="title"><i class="icon is-large fas fa-wifi"></i></h1>
+                        <h2 class="subtitle">Redes locales</h2>
+                        <p>Instalaciones de Redes LAN que ayudarán a la comunicación y productividad de tu 
+                            empresa. Comparte archivos e impresoras, <strong>¡reduce costos!</strong> aprovechando 
+                            la interoperabilidad.</p>
+                    </div>
+                    <div class="tile is-child box notification is-primary wow slideInRight">
+                        <h1 class="title"><i class="icon is-large fas fa-chart-bar"></i></h1>
+                        <h2 class="subtitle">Sistemas de gestión</h2>
+                        <p>Ayudamos a que tu empresa aumente su eficiencia y productividad mediante estos sistemas de gestión.</p>
+                            <ul>
+                                <li>Sistema contables ASPEL COI.</li>
+                                <li>Sistema de nómina ASPEL NOI.</li>
+                                <li>Sistema de inventario ASPEL SAE.</li>
+                                <li>Sistema de facturación f&#64;cture.</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tile is-child box notification is-dark wow slideInUp" id="aboutus">
+                <h1 class="title is-4"><i class="icon is-large fas fa-users"></i></h1>
+                <h2 class="subtitle">Nosotros</h2>
+                <p>
+                    Somos una micro empresa mexicana dedicada a ayudar a las micro y pequeñas empresas a aumentar su competitividad mediante 
+                    estrategias digitales mercadológicas, implementadas por profesionales, generando un ecosistema digital completo
+                    para tu empresa.
+                </p>
+                <br>
+                <p>
+                    Además nos gustan las nuevas tecnologías por eso usamos:
+                </p>
+                <div class="columns">
+                    <div class="column">
+                        <ul>
+                            <li>MaterializeCSS</li>
+                            <li>Semantic-UI</li>
+                            <li>Git</li>
+                            <li>Wordpress</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <ul>
+                            <li>Bulma</li>
+                            <li>JQuery</li>
+                            <li>PHP</li>
+                            <li>AnchorCMS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="section has-text-centered">
+        <span class="spaced icon has-text-danger wow heartBeat"><i class="fab fa-3x fa-html5"></i></span>
+        <span class="spaced icon has-text-link wow wobble"><i class="fab fa-3x fa-css3"></i></span>
+        <span class="spaced icon has-text-warning wow zoomIn"><i class="fab fa-3x fa-js"></i></span>
+        <span class="spaced icon has-text-link wow bounce"><i class="fab fa-3x fa-php"></i></span>
+        <span class="spaced icon has-text-info wow slideInUp"><i class="fab fa-3x fa-windows"></i></span>
+        <span class="spaced icon has-text-dark wow tada"><i class="fab fa-3x fa-linux"></i></span>
+        <span class="spaced icon has-text-grey wow swing"><i class="fab fa-3x fa-github"></i></span>
+        <span class="spaced icon has-text-danger wow shake"><i class="fab fa-3x fa-gitlab"></i></span>
+        <span class="spaced icon has-text-dark wow rubberBand"><i class="fab fa-3x fa-wordpress"></i></span>
+        <span class="spaced icon has-text-success wow rollIn"><i class="fas fa-3x fa-code"></i></span>
+    </div>
+    <div class="section wow fadeIn" id="contacus">
+        <div class="container has-text-centered">
+            <h2 class="title is-4">Contáctanos</h2>
+            <p>Puedes ponerte en contacto con nosotros en San Juan del Río, Qro., para cualquier duda o cotización que requieras.</p>
+            <br>
+            <p>
+                <span class="icon has-text-primary"><i class="fab fa-whatsapp"></i></span><a href="https://api.whatsapp.com/send?phone=524271153837&text=Contacto">427 115 3837</a><br>
+                <span class="icon has-text-danger"><i class="fas fa-envelope "></i></span><a href="mailto:info&#64;thinkonline.xyz">info&#64;thinkonline.xyz</a>
+            </p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                Think Online! 2019&copy; por <a href="https://thinkonline.xyz">Think Online!</a>. Hecho con <a href="https://bulma.io">Bulma</a>
+            </p>
+        </div>
     </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
-    $(document).ready(function() {
-    $(window).scroll( function(){
-        $('.product').each( function(i){
-            
-            var bottom_of_element = $(this).offset().top + $(this).outerHeight()/2;
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-            if( bottom_of_window > bottom_of_element ){
-                $(this).animate({'opacity':'1'}, 0);
-            }
-            
-        }); 
+$(document).ready(function() {
+    // Check for click events on the navbar burger icon
+    $(".navbar-burger").click(function() {
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        $(".navbar-burger").toggleClass("is-active");
+        $(".navbar-menu").toggleClass("is-active");
     });
 });
+wow = new WOW()
+wow.init();
 </script>
 </body>
 </html>
