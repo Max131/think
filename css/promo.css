@@ -1,18 +1,22 @@
 @charset "utf-8";
 html{scroll-behavior: smooth;}
-body{overflow-x: hidden;}
+body{ overflow-x: hidden}
 .background{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
   }
 
-  .hero.background{
-    background-image: linear-gradient(white, rgb(255, 255, 255, .6)),url('../images/abstract.jpg');
+.hero.background{
+    background-image: url('../images/motorcycle.jpg');
   }
 
-  .section.background{
-    background-image: linear-gradient(white, rgb(255, 255, 255, .5)), url('../images/workplace.jpg');
+.section.background{
   }
+
+.has-text-shadow-danger{
+  text-shadow: 0 0 10px red;
+}
+
 .down-arrow{position: relative;animation: jump 1.5s infinite;animation-timing-function: ease-out;}
 @keyframes jump{50% {transform: translateX(-10px);}}
