@@ -8,7 +8,7 @@ body{overflow-x: hidden;}
   }
 
   .hero.background{
-    background-image: linear-gradient(white, rgb(255, 255, 255, .6)),url('../images/abstract.jpg');
+    background-image:   radial-gradient(ellipse at center, rgba(0, 0, 0, 0.5), black), url('../images/computer.jpg');
   }
 
   .section.background{
