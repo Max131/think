@@ -8,11 +8,11 @@ body{overflow-x: hidden;}
   }
 
   .hero.background{
-    background-image:   radial-gradient(ellipse at center, rgba(0, 0, 0, 0.5), black), url('../images/computer.jpg');
+    background-image:   radial-gradient(ellipse at center, rgba(0, 0, 0, 0.5), black), url('/images/computer.jpg');
   }
 
   .section.background{
-    background-image: linear-gradient(white, rgb(255, 255, 255, .5)), url('../images/workplace.jpg');
+    background-image: linear-gradient(white, rgb(255, 255, 255, .5)), url('/images/workplace.jpg');
   }
 .down-arrow{position: relative;animation: jump 1.5s infinite;animation-timing-function: ease-out;}
 @keyframes jump{50% {transform: translateX(-10px);}}
