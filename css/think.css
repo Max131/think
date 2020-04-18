@@ -11,8 +11,8 @@ body{overflow-x: hidden;}
     background-image:   radial-gradient(ellipse at center, rgba(0, 0, 0, 0.5), black), url('/images/computer.jpg');
   }
 
-  .section.background{
+  body.background{
     background-image: linear-gradient(white, rgb(255, 255, 255, .5)), url('/images/workplace.jpg');
   }
-.down-arrow{position: relative;animation: jump 1.5s infinite;animation-timing-function: ease-out;}
-@keyframes jump{50% {transform: translateX(-10px);}}
+/* .down-arrow{position: relative;animation: jump 2s infinite;animation-timing-function: ease;} */
+/* @keyframes jump{50% {transform: scale(1.2);}} */
