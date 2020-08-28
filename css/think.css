@@ -1,7 +1,7 @@
 @charset "utf-8";
 html{scroll-behavior: smooth;}
 body{overflow-x: hidden;}
-.background{
+.background, .education{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -13,6 +13,10 @@ body{overflow-x: hidden;}
 
   body.background{
     background-image: linear-gradient(white, rgb(255, 255, 255, .5)), url('/images/workplace.jpg');
+  }
+
+  .hero.education{
+    background-image:   radial-gradient(ellipse at center, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('/education/images/chalkboard.jpg');    
   }
 /* .down-arrow{position: relative;animation: jump 2s infinite;animation-timing-function: ease;} */
 /* @keyframes jump{50% {transform: scale(1.2);}} */
