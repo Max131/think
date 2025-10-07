@@ -1,396 +1,497 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Desarrollo de páginas web, soporte técnico a computadoras y laptops, implementación de redes y sistemas de gestión" />
-  <meta name="keyworkds" content="diseño web, pymes, negocios, desarrollo web, sitio en internet, presencia online, página, san juan, querétaro" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Think Online! - Páginas web para PYMES</title>
-  <link rel="shortcut icon" href="icon.png" type="image/x-icon">
-  <link rel="canonical" href="http://thinkonline.xyz">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/think.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-  <!-- Open Graph meta -->
-  <meta property="og:type" content="business.business" />
-  <meta property="og:title" content="Think Online!" />
-  <meta property="og:url" content="https://thinkonline.xyz" />
-  <meta property="og:description"
-    content="Desarrollo de páginas web, soporte técnico a computadoras y laptops, implementación de redes y sistemas de gestión" />
-  <meta property="og:image" content="https://thinkonline.xyz/images/social.png" />
-  <meta property="og:locale" content="es_MX" />
-  <meta property="business:contact_data:locality" content="San Juan del Río" />
-  <meta property="business:contact_data:region" content="Querétaro" />
-  <meta property="business:contact_data:postal_code" content="76800" />
-  <meta property="business:contact_data:country_name" content="México" />
-  <!-- Twitter Cards -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Think Online!">
-  <meta name="twitter:description"
-    content="Desarrollo de páginas web, soporte técnico a computadoras y laptops, implementación de redes y sistemas de gestión">
-  <meta name="twitter:image" content="https://thinkonline.xyz/images/social.png">
-  <meta name="twitter:image:alt" content="Logo Think Online!">
-  <!-- Marcado JSON-LD generado por el Asistente para el marcado de datos estructurados de Google. -->
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Think Online!",
-      "image": "https://thinkonline.xyz/images/social.png",
-      "telephone": "(427) 120 1343",
-      "email": "info@thinkonline.xyz",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "San Juan del Rí­o",
-        "addressRegion": "Querétaro",
-        "addressCountry": "México",
-        "postalCode": "76800"
-      },
-      "url": "https://thinkonline.xyz",
-      "review": {
-        "@type": "Review",
-        "author": "Think Online!",
-        "reviewBody": "Desarrollo de páginas web, soporte técnico a computadoras y laptops, implementación de redes y sistemas de gestión"
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Desarrollo de páginas web, soporte técnico a computadoras y laptops, implementación de redes y sistemas de gestión"
+    />
+    <meta
+      name="keyworkds"
+      content="diseño web, pymes, negocios, desarrollo web, sitio en internet, presencia online, página, san juan, querétaro"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Think Online! - Páginas web para PYMES</title>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+    <link rel="canonical" href="http://thinkonline.xyz" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/think.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+    <!-- Open Graph meta -->
+    <meta property="og:type" content="business.business" />
+    <meta property="og:title" content="Think Online!" />
+    <meta property="og:url" content="https://thinkonline.xyz" />
+    <meta
+      property="og:description"
+      content="Desarrollo de páginas web, soporte técnico a computadoras y laptops, implementación de redes y sistemas de gestión"
+    />
+    <meta
+      property="og:image"
+      content="https://thinkonline.xyz/images/social.png"
+    />
+    <meta property="og:locale" content="es_MX" />
+    <meta
+      property="business:contact_data:locality"
+      content="San Juan del Río"
+    />
+    <meta property="business:contact_data:region" content="Querétaro" />
+    <meta property="business:contact_data:postal_code" content="76800" />
+    <meta property="business:contact_data:country_name" content="México" />
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Think Online!" />
+    <meta
+      name="twitter:description"
+      content="Desarrollo de páginas web, soporte técnico a computadoras y laptops, implementación de redes y sistemas de gestión"
+    />
+    <meta
+      name="twitter:image"
+      content="https://thinkonline.xyz/images/social.png"
+    />
+    <meta name="twitter:image:alt" content="Logo Think Online!" />
+    <!-- Marcado JSON-LD generado por el Asistente para el marcado de datos estructurados de Google. -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Think Online!",
+        "image": "https://thinkonline.xyz/images/social.png",
+        "telephone": "(427) 120 1343",
+        "email": "info@thinkonline.xyz",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "San Juan del Rí­o",
+          "addressRegion": "Querétaro",
+          "addressCountry": "México",
+          "postalCode": "76800"
+        },
+        "url": "https://thinkonline.xyz",
+        "review": {
+          "@type": "Review",
+          "author": "Think Online!",
+          "reviewBody": "Desarrollo de páginas web, soporte técnico a computadoras y laptops, implementación de redes y sistemas de gestión"
+        }
       }
-    }
-  </script>
-</head>
+    </script>
+  </head>
 
-<body class="background">
-  <section class="hero is-fullheight background">
-    <div class="hero-head">
-      <nav class="navbar is-dark has-text-weight-light">
-        <div class="navbar-brand">
-          <a href="/" class="navbar-item has-text-warning is-branding is-size-3">Think Online!</a>
-          <span class="navbar-burger has-text-warning" data-target="navbarMenuHeroA">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </div>
-        <div class="navbar-menu" id="navbarMenuHeroA">
-          <div class="navbar-end">
-            <a href="#services" class="navbar-item is-size-4"><span>Servicios</span></a>
-            <a href="#aboutus" class="navbar-item is-size-4"><span>Nosotros</span></a>
-            <a href="demo/" class="navbar-item is-size-4"><span>Demos</span></a>
-            <a href="#contactus" class="navbar-item is-size-4"><span>Contacto</span></a>
+  <body class="background">
+    <section class="hero is-fullheight background">
+      <div class="hero-head">
+        <nav class="navbar is-dark has-text-weight-light">
+          <div class="navbar-brand">
+            <a
+              href="/"
+              class="navbar-item has-text-warning is-branding is-size-3"
+              >Think Online!</a
+            >
+            <span
+              class="navbar-burger has-text-warning"
+              data-target="navbarMenuHeroA"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
           </div>
-        </div>
-      </nav>
-    </div>
-    <div class="hero-body">
-      <div class="container">
-        <div class="content is-large has-text-centered">
-          <h1 class="title has-text-weight-light has-text-white">¡Dale seriedad a tu negocio!</h1>
-          <h2 class="subtitle has-text-weight-light has-text-warning">¡Ponlo en
-				  Internet!</h2>
-          <p>
-            <a href="#moreweb" class="button is-medium is-warning">
-              <span class="has-text-weight-bold">Inicia ya</span>
-            </a>
-          </p>
-        </div>
+          <div class="navbar-menu" id="navbarMenuHeroA">
+            <div class="navbar-end">
+              <a href="#services" class="navbar-item is-size-4"
+                ><span>Servicios</span></a
+              >
+              <a href="#aboutus" class="navbar-item is-size-4"
+                ><span>Nosotros</span></a
+              >
+              <a href="demo/" class="navbar-item is-size-4"
+                ><span>Demos</span></a
+              >
+            </div>
+          </div>
+        </nav>
       </div>
-    </div>
-  </section>
-  <section class="section background" id="moreweb">
-    <div class="container content is-large has-text-centered">
-      <div class="columns is-centered is-vcentered">
-        <div class="column is-half">
-          <h2 class="title is-2 has-text-info has-text-weight-light">¿Qué
-				  ventajas tiene una página web?</h2>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="columns content is-large">
-        <div class="column has-text-centered" data-aos="fade-right">
-          <h2 class="title"><span class="icon is-large has-text-info"><i class="fas fa-code fa-2x"></i></span></h2>
-          <h3 class="subtitle has-text-danger">Sitio a su medida</h3>
-          <p>
-            Obtenga un <strong>sitio totalmente a su gusto</strong>, nada de plantillas
-            prefabricadas y difíciles de adaptar a lo que busca tener.
-          </p>
-        </div>
-        <div class="column has-text-centered" data-aos="fade-up">
-          <h2 class="title"><span class="icon is-large has-text-info"><i class="fas fa-search fa-2x"></i></span></h2>
-          <h3 class="subtitle has-text-danger">Visibilidad</h3>
-          <p>
-            Otorgue <strong>visibilidad a su negocio</strong>, sus clientes potenciales usarán los principales
-            buscadores del mercado para encontrarlo a usted.
-          </p>
-        </div>
-        <div class="column has-text-centered" data-aos="fade-left">
-          <h2 class="title"><span class="icon is-large has-text-info"><i class="fas fa-server fa-2x"></i></span></h2>
-          <h3 class="subtitle has-text-danger">Dominio propio</h3>
-          <p>
-            Vease profesional con un dominio del tipo <strong>suempresa.com</strong> y dele personalidad a sus correos
-            con correos como <strong>departamento@suempresa.com</strong>.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section">
-    <div class="container">
-      <div class="content has-text-centered">
-        <h2 class="title is-3 has-text-danger">Una página web para darle seriedad a tu negocio</h2>
-        <br>
-        <br>
-      </div>
-    </div>
-    <div class="container">
-      <div class="columns is-centered is-multiline">
-        <div class="column is-4">
-          <div class="media">
-            <div class="media-left">
-              <span class="icon is-medium has-text-info"><i class="fas fa-list fa-2x"></i></span>
-            </div>
-            <div class="media-content">
-              <div class="content is-medium">
-                <h2 class="title is-5">Página tipo landingscape</h2>
-                <p>Página que presenta toda la información de su sitio de una forma sencilla y agradable.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column is-4">
-          <div class="media">
-            <div class="media-left">
-              <span class="icon is-medium has-text-info"><i class="fas fa-mobile-alt fa-2x"></i></span>
-            </div>
-            <div class="media-content">
-              <div class="content is-medium">
-                <h2 class="title is-5">Diseño responsive</h2>
-                <p>Diseño adaptable a todo tipo de dispositivos para una visualización garantizada.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column is-4">
-          <div class="media">
-            <div class="media-left">
-              <span class="icon is-medium has-text-info"><i class="fas fa-code fa-2x"></i></span>
-            </div>
-            <div class="media-content">
-              <div class="content is-medium">
-                <h2 class="title is-5">Diseño justo</h2>
-                <p>Integramos su sitio con los colores de su empresa. También le proporcionamos un diseño práctico y
-                  funcional.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column is-4">
-          <div class="media">
-            <div class="media-left">
-              <span class="icon is-medium has-text-info"><i class="fas fa-hashtag fa-2x"></i></span>
-            </div>
-            <div class="media-content">
-              <div class="content is-medium">
-                <h2 class="title is-5">Redes sociales</h2>
-                <p>Integramos accesos a sus redes sociales, tanto en menú prinicpal como a pie de página.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column is-4">
-          <div class="media">
-            <div class="media-left">
-              <span class="icon is-medium has-text-info"><i class="fas fa-comments fa-2x"></i></span>
-            </div>
-            <div class="media-content">
-              <div class="content is-medium">
-                <h2 class="title is-5">Cominicación directa con visitantes</h2>
-                <p>Integramos su sitio con una aplicación de comuinicación directra entre los visitantes de su sitio y
-                  usted.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column is-4">
-          <div class="media">
-            <div class="media-left">
-              <span class="icon is-medium has-text-info"><i class="fas fa-server fa-2x"></i></span>
-            </div>
-            <div class="media-content">
-              <div class="content is-medium">
-                <h2 class="title is-5">Hosting y dominio incluído</h2>
-                <p>Junto a su diseño le proporcionamos durante un año totalmente gratis tanto el hosting como el nombre
-                  de dominio.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <br><br>
-      <div class="content has-text-centered">
-        <a href="#contactus" class="button is-large is-danger">
-          ¡Contáctanos ya!
-        </a>
-      </div>
-    </div>
-  </section>
-  <section class="section" id="costumers" data-aos="fade-up" data-aos-duration="1500">
-    <div class="container has-text-centered">
-      <div class="columns">
-        <div class="column is-3">
-          <h3 class="subtitle is-5">Diseño y publicidad integral</h3>
-          <a href="http://dpidisenopublicidad.com/" target="_blank">
-            <figure class="imgage"><img src="images/customers/dpi.jpg" alt="DPI Website"></figure>
-          </a>
-        </div>
-        <div class="column is-3">
-          <h3 class="subtitle is-5">Cominds S. A. de C. V.</h3>
-          <a href="https://comindsmx.com" target="_blank">
-            <figure class="imgage"><img src="images/customers/cominds.jpg" alt="Cominds Website"></figure>
-          </a>
-        </div>
-        <div class="column is-3">
-          <h3 class="subtitle is-5">DeFábula</h3>
-          <a href="https://max131.github.io/defabula" target="_blank">
-            <figure class="imgage"><img src="images/customers/defabula.jpg" alt="DeFábula Website"></figure>
-          </a>
-        </div>
-        <div class="column is-3">
-          <h3 class="subtitle is-5">Geasa S. A. de C. V.</h3>
-          <a href="http://geasasadecv.com.mx" target="_blank">
-            <figure class="imgage"><img src="images/customers/geasa.jpg" alt="Geasa Website"></figure>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section" id="services" data-aos="zoom-out">
-    <div class="container">
-      <div class="content is-large has-text-centered">
-        <h2 class="title has-text-weight-light">Servicios</h2>
-      </div>
-    </div>
-    <section class="section">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-4">
-          <div class="content is-medium">
-            <span class="icon is-large has-text-warning"><i class="fas fa-hashtag fa-4x"></i></span>
-            <h4 class="title is-3 has-text-info">Community Management</h4>
-            <p>Si también tienes una página de Facebook o Twitter pero no tienes tiempo de administrarla o publicar, te
-              podemos ayudar</p>
-            <p>Alguno de nuestros colaboradores te ayudará gestionando publicaciones y administrandolas.</p>
-            <p>También podemos ayudarte a crear contenido para campañas publicitarias en Facebook que atraerán tu
-              público objetivo.</p>
-          </div>
-        </div>
-        <div class="column is-4">
-          <div class="content is-medium">
-            <span class="icon is-large has-text-danger"><i class="fas fa-laptop fa-4x"></i></span>
-            <h4 class="title is-3 has-text-info">Soporte técnico</h4>
-            <p>Ofrecemos soporte técnico a domicilio a todos sus equipos de computo (Desktop, laptop, modems, routers),
-              porque sabemos lo importante que es trabajar sin contratiempos.</p>
-            <ul class="has-text-left">
-              <li>Formateo</li>
-              <li>Actualizaciones</li>
-              <li>Software</li>
-              <li>Antivirus</li>
-              <li>Respaldos</li>
-              <li>Redes</li>
-              <li>Sismteas de gestión (Aspel SAE)</li>
-            </ul>
-          </div>
-        </div>
-        <div class="column is-4">
-          <div class="content is-medium">
-            <span class="icon is-large has-text-success"><i class="fas fa-book-open fa-4x"></i></span>
-            <h4 class="title is-3 has-text-info">Diseño gráfico</h4>
+      <div class="hero-body">
+        <div class="container">
+          <div class="content is-large has-text-centered">
+            <h1 class="title has-text-weight-light has-text-white">
+              ¡Dale seriedad a tu negocio!
+            </h1>
+            <h2 class="subtitle has-text-weight-light has-text-warning">
+              ¡Ponlo en Internet!
+            </h2>
             <p>
-              Si uste necesita también publicidad empresa, uno de nuestros diseñadores puede ayudarlo con ello:
+              <a href="#moreweb" class="button is-medium is-warning">
+                <span class="has-text-weight-bold">Inicia ya</span>
+              </a>
             </p>
-            <ul class="has-text-left">
-              <li>Tarjetas de presentación</li>
-              <li>Flyers</li>
-              <li>Carteles</li>
-              <li>Lonas</li>
-              <li>Serigrafía</li>
-            </ul>
           </div>
         </div>
       </div>
     </section>
-  </section>
-  <section class="section" id="aboutus">
-    <div class="columns is-vcentered" data-aos="fade-left" data-aos-duration="1000">
-      <div class="column is-3 is-offset-1-desktop has-text-left">
-        <figure class="image is-square"><img src="images/team.jpg" alt="" class="is-rounded"></figure>
-      </div>
-      <div class="column is-6 is-offset-1-desktop">
-        <div class="content is-large">
-          <h2 class="title has-text-weight-light has-text-info">¿Quiénes somos?</h2>
-          <p>
-            Somos un grupo pequeño de gente que gusta de las nuevas tecnologías, sus herramientas y retos.
-          </p>
-          <p>
-            Nuestra meta es satisfacer sus necesidades tecnológicas y digitales para que usted pueda presentar su mejor
-            cara ante el mundo digital.
-          </p>
+    <section class="section background" id="moreweb">
+      <div class="container content is-large has-text-centered">
+        <div class="columns is-centered is-vcentered">
+          <div class="column is-half">
+            <h2 class="title is-2 has-text-info has-text-weight-light">
+              ¿Qué ventajas tiene una página web?
+            </h2>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="section" id="contactus">
-    <div class="columns is-vcentered" data-aos="fade-right" data-aos-duration="1000">
-      <div class="column is-6 is-offset-1-desktop">
-        <div class="content is-large">
-          <h2 class="title has-text-danger">Pongámonos en contacto</h2>
-          <p>
-            Comuniquese con nosotros y con gusto le ayudarémos a resolver sus necesidades.
-            Estámos ubicados en San Juan del Río, Querétaro.
-          </p>
-          <p><span class="icon is-medium has-text-danger"><i class="fas fa-mobile-alt"></i></span><span><a
-                href="tel:+524271201343">427 120 1343</a></span></p>
-          <p><span class="icon is-medium has-text-info"><i class="fas fa-envelope"></i></span><span><a
-                href="mailto:info@thinkonline.xyz">info&#64;thinkonline.xyz</a></span></p>
-          <p><span class="icon is-medium has-text-success"><i class="fab fa-whatsapp"></i></span><span><a
-                href="https://api.whatsapp.com/send?phone=524271153837&text=Info">427 120 1343</a></span></p>
-          <p><span class="icon is-medium has-text-info"><i class="fab fa-facebook"></i></span><span><a
-                href="https://fb.me/thinkonlinenow">Think Online!</a></span></p>
+      <div class="container">
+        <div class="columns content is-large">
+          <div class="column has-text-centered" data-aos="fade-right">
+            <h2 class="title">
+              <span class="icon is-large has-text-info"
+                ><i class="fas fa-code fa-2x"></i
+              ></span>
+            </h2>
+            <h3 class="subtitle has-text-danger">Sitio a su medida</h3>
+            <p>
+              Obtenga un <strong>sitio totalmente a su gusto</strong>, nada de
+              plantillas prefabricadas y difíciles de adaptar a lo que busca
+              tener.
+            </p>
+          </div>
+          <div class="column has-text-centered" data-aos="fade-up">
+            <h2 class="title">
+              <span class="icon is-large has-text-info"
+                ><i class="fas fa-search fa-2x"></i
+              ></span>
+            </h2>
+            <h3 class="subtitle has-text-danger">Visibilidad</h3>
+            <p>
+              Otorgue <strong>visibilidad a su negocio</strong>, sus clientes
+              potenciales usarán los principales buscadores del mercado para
+              encontrarlo a usted.
+            </p>
+          </div>
+          <div class="column has-text-centered" data-aos="fade-left">
+            <h2 class="title">
+              <span class="icon is-large has-text-info"
+                ><i class="fas fa-server fa-2x"></i
+              ></span>
+            </h2>
+            <h3 class="subtitle has-text-danger">Dominio propio</h3>
+            <p>
+              Vease profesional con un dominio del tipo
+              <strong>suempresa.com</strong> y dele personalidad a sus correos
+              con correos como <strong>departamento@suempresa.com</strong>.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="column is-3">
-        <figure class="image is-square">
-          <img src="images/contactus.jpg" alt="" class="is-rounded">
-        </figure>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="content has-text-centered">
+          <h2 class="title is-3 has-text-danger">
+            Una página web para darle seriedad a tu negocio
+          </h2>
+          <br />
+          <br />
+        </div>
       </div>
-    </div>
-  </section>
-  <footer class="footer has-text-centered">
-    <div class="content is-medium">
-      <br>
-      <p>
-        Think Online! 2020&copy; hecho con <a href="https://bulma.io">Bulma</a>
-      </p>
-    </div>
-  </footer>
-  <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
-    var Tawk_API = Tawk_API || {},
-      Tawk_LoadStart = new Date();
-    (function () {
-      var s1 = document.createElement("script"),
-        s0 = document.getElementsByTagName("script")[0];
-      s1.async = true;
-      s1.src = 'https://embed.tawk.to/5da102cbfbec0f2fe3b95765/default';
-      s1.charset = 'UTF-8';
-      s1.setAttribute('crossorigin', '*');
-      s0.parentNode.insertBefore(s1, s0);
-    })();
-  </script>
-  <!--End of Tawk.to Script-->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/scripts.js"></script>
-</body>
-
+      <div class="container">
+        <div class="columns is-centered is-multiline">
+          <div class="column is-4">
+            <div class="media">
+              <div class="media-left">
+                <span class="icon is-medium has-text-info"
+                  ><i class="fas fa-list fa-2x"></i
+                ></span>
+              </div>
+              <div class="media-content">
+                <div class="content is-medium">
+                  <h2 class="title is-5">Página tipo landingscape</h2>
+                  <p>
+                    Página que presenta toda la información de su sitio de una
+                    forma sencilla y agradable.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-4">
+            <div class="media">
+              <div class="media-left">
+                <span class="icon is-medium has-text-info"
+                  ><i class="fas fa-mobile-alt fa-2x"></i
+                ></span>
+              </div>
+              <div class="media-content">
+                <div class="content is-medium">
+                  <h2 class="title is-5">Diseño responsive</h2>
+                  <p>
+                    Diseño adaptable a todo tipo de dispositivos para una
+                    visualización garantizada.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-4">
+            <div class="media">
+              <div class="media-left">
+                <span class="icon is-medium has-text-info"
+                  ><i class="fas fa-code fa-2x"></i
+                ></span>
+              </div>
+              <div class="media-content">
+                <div class="content is-medium">
+                  <h2 class="title is-5">Diseño justo</h2>
+                  <p>
+                    Integramos su sitio con los colores de su empresa. También
+                    le proporcionamos un diseño práctico y funcional.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-4">
+            <div class="media">
+              <div class="media-left">
+                <span class="icon is-medium has-text-info"
+                  ><i class="fas fa-hashtag fa-2x"></i
+                ></span>
+              </div>
+              <div class="media-content">
+                <div class="content is-medium">
+                  <h2 class="title is-5">Redes sociales</h2>
+                  <p>
+                    Integramos accesos a sus redes sociales, tanto en menú
+                    prinicpal como a pie de página.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-4">
+            <div class="media">
+              <div class="media-left">
+                <span class="icon is-medium has-text-info"
+                  ><i class="fas fa-comments fa-2x"></i
+                ></span>
+              </div>
+              <div class="media-content">
+                <div class="content is-medium">
+                  <h2 class="title is-5">
+                    Cominicación directa con visitantes
+                  </h2>
+                  <p>
+                    Integramos su sitio con una aplicación de comuinicación
+                    directra entre los visitantes de su sitio y usted.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-4">
+            <div class="media">
+              <div class="media-left">
+                <span class="icon is-medium has-text-info"
+                  ><i class="fas fa-server fa-2x"></i
+                ></span>
+              </div>
+              <div class="media-content">
+                <div class="content is-medium">
+                  <h2 class="title is-5">Hosting y dominio incluído</h2>
+                  <p>
+                    Junto a su diseño le proporcionamos durante un año
+                    totalmente gratis tanto el hosting como el nombre de
+                    dominio.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <br /><br />
+        <div class="content has-text-centered">
+          <a href="#contactus" class="button is-large is-danger">
+            ¡Contáctanos ya!
+          </a>
+        </div>
+      </div>
+    </section>
+    <section
+      class="section"
+      id="costumers"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
+      <div class="container has-text-centered">
+        <div class="columns">
+          <div class="column is-3">
+            <h3 class="subtitle is-5">Diseño y publicidad integral</h3>
+            <a href="http://dpidisenopublicidad.com/" target="_blank">
+              <figure class="imgage">
+                <img src="images/customers/dpi.jpg" alt="DPI Website" />
+              </figure>
+            </a>
+          </div>
+          <div class="column is-3">
+            <h3 class="subtitle is-5">Cominds S. A. de C. V.</h3>
+            <a href="https://comindsmx.com" target="_blank">
+              <figure class="imgage">
+                <img src="images/customers/cominds.jpg" alt="Cominds Website" />
+              </figure>
+            </a>
+          </div>
+          <div class="column is-3">
+            <h3 class="subtitle is-5">DeFábula</h3>
+            <a href="https://max131.github.io/defabula" target="_blank">
+              <figure class="imgage">
+                <img
+                  src="images/customers/defabula.jpg"
+                  alt="DeFábula Website"
+                />
+              </figure>
+            </a>
+          </div>
+          <div class="column is-3">
+            <h3 class="subtitle is-5">Geasa S. A. de C. V.</h3>
+            <a href="http://geasasadecv.com.mx" target="_blank">
+              <figure class="imgage">
+                <img src="images/customers/geasa.jpg" alt="Geasa Website" />
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="services" data-aos="zoom-out">
+      <div class="container">
+        <div class="content is-large has-text-centered">
+          <h2 class="title has-text-weight-light">Servicios</h2>
+        </div>
+      </div>
+      <section class="section">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-4">
+            <div class="content is-medium">
+              <span class="icon is-large has-text-warning"
+                ><i class="fas fa-hashtag fa-4x"></i
+              ></span>
+              <h4 class="title is-3 has-text-info">Community Management</h4>
+              <p>
+                Si también tienes una página de Facebook o Twitter pero no
+                tienes tiempo de administrarla o publicar, te podemos ayudar
+              </p>
+              <p>
+                Alguno de nuestros colaboradores te ayudará gestionando
+                publicaciones y administrandolas.
+              </p>
+              <p>
+                También podemos ayudarte a crear contenido para campañas
+                publicitarias en Facebook que atraerán tu público objetivo.
+              </p>
+            </div>
+          </div>
+          <div class="column is-4">
+            <div class="content is-medium">
+              <span class="icon is-large has-text-danger"
+                ><i class="fas fa-laptop fa-4x"></i
+              ></span>
+              <h4 class="title is-3 has-text-info">Soporte técnico</h4>
+              <p>
+                Ofrecemos soporte técnico a domicilio a todos sus equipos de
+                computo (Desktop, laptop, modems, routers), porque sabemos lo
+                importante que es trabajar sin contratiempos.
+              </p>
+              <ul class="has-text-left">
+                <li>Formateo</li>
+                <li>Actualizaciones</li>
+                <li>Software</li>
+                <li>Antivirus</li>
+                <li>Respaldos</li>
+                <li>Redes</li>
+                <li>Sismteas de gestión (Aspel SAE)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="column is-4">
+            <div class="content is-medium">
+              <span class="icon is-large has-text-success"
+                ><i class="fas fa-book-open fa-4x"></i
+              ></span>
+              <h4 class="title is-3 has-text-info">Diseño gráfico</h4>
+              <p>
+                Si uste necesita también publicidad empresa, uno de nuestros
+                diseñadores puede ayudarlo con ello:
+              </p>
+              <ul class="has-text-left">
+                <li>Tarjetas de presentación</li>
+                <li>Flyers</li>
+                <li>Carteles</li>
+                <li>Lonas</li>
+                <li>Serigrafía</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="section" id="aboutus">
+      <div
+        class="columns is-vcentered"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+      >
+        <div class="column is-3 is-offset-1-desktop has-text-left">
+          <figure class="image is-square">
+            <img src="images/team.jpg" alt="" class="is-rounded" />
+          </figure>
+        </div>
+        <div class="column is-6 is-offset-1-desktop">
+          <div class="content is-large">
+            <h2 class="title has-text-weight-light has-text-info">
+              ¿Quiénes somos?
+            </h2>
+            <p>
+              Somos un grupo pequeño de gente que gusta de las nuevas
+              tecnologías, sus herramientas y retos.
+            </p>
+            <p>
+              Nuestra meta es satisfacer sus necesidades tecnológicas y
+              digitales para que usted pueda presentar su mejor cara ante el
+              mundo digital.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer has-text-centered">
+      <div class="content is-medium">
+        <br />
+        <p>
+          Think Online! 2020&copy; hecho con
+          <a href="https://bulma.io">Bulma</a>
+        </p>
+      </div>
+    </footer>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/5da102cbfbec0f2fe3b95765/default";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
